@@ -1,0 +1,17 @@
+<section>
+  <% @jobs.each do |job| %>
+    <div>
+      <strong><%= link_to job.title, job %></strong>
+      <dl>
+        <dt>Categoria</dt>
+        <dd><%= job.category %></dd>
+        <dt>Descrição</dt>
+        <dd><%= job.description %></dd>
+        <dt>Local</dt>
+        <dd><%= job.location %></dd>
+        <dt>Empresa</dt>
+        <dd><%= job.company %></dd>
+      </dl>
+    </div>
+  <% end %>
+</section>
