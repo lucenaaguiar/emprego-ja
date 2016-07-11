@@ -9,7 +9,7 @@ feature 'Visitor visits job details' do
                      location: 'São Paulo')
 
     visit root_path
-    
+
     click_on 'Vaga de Dev'
 
     expect(page).to have_content job.title
